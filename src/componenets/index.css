@@ -1,38 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-.container{
-    margin:auto;
-    height: 200px;
-    width: 300px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  }
+  
+h2{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+h1 {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 600;
+    width: 150px;
+    height: 100px;
+    border-radius: 16px;
+    background-color:  #fddddb;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: auto;
+    margin-top: 30px;
+  }
+  
+  .data {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .name-container {
+    display: flex;
     flex-direction: column;
-    font-family: "Bree Serif";
-    border: 2px solid rgb(85, 83, 83);
-    margin-top: 20%;
-    border-radius: 16px;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  
+button {
+    color: #dd1264;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+  }
+.show{
+    display: block;
 }
-.LightMode{
-    background: white;
-    color: black;
-}
-.DarkMode{
-    background: black;
-    color:white;
-}
-h1{
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-p{
-    color: white;
-    font-size: 35px;
-}
-button{
-    margin-top: 20px;
-    width: 100px;
-    color: black;
-    font-size: 15px;
-    border-radius: 10px;
+.hide{
+    display: none;
 }
