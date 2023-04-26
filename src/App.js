@@ -1,5 +1,5 @@
 import React from 'react'
-import Counter from './tools/index'
+import Counter from './componenets/index'
 
 const App = () => {
   return (

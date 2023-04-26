@@ -2,21 +2,20 @@ import { Component } from "react";
 import './index.css'
 
 class Counter extends Component{
-    state = {text:true,content:"Subscribe"}
+    state = {text:true,content:"LightMode"}
     changeText = () => {
         const {text,content} =  this.state
         if (text){
-            this.setState({text:false,content:"Subscribed"})
+            this.setState({text:false,content:"DarkMode"})
         }else{
-            this.setState({text:true,content:"Subscribe"})
+            this.setState({text:true,content:"LightMode"})
         }
     }
     render(){
         const {content} =  this.state
         return(
-            <div className="container">
-                    <h1>Welcome</h1>
-                    <p>Thank you Happy Learning</p> 
+            <div className= {`container ${content}`} >
+                    <h1>Click to change the mode</h1>
                     <button onClick={this.changeText}> {content}</button>
             </div>
         )
