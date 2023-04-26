@@ -1,11 +1,9 @@
 import React from 'react'
-import Counter from './components/FruitsContainer/index'
+import Counter from './tools/index'
 
 const App = () => {
   return (
-    <div>
-        <Counter />
-    </div>
+    <Counter />
   )
 }
 
