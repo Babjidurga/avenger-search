@@ -1,37 +1,177 @@
-.home{
+.list-container{
     display: flex;
+    min-height:100vh ;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-image: linear-gradient(to right,rgb(126, 167, 137),rgb(121, 236, 121));
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, rgb(127, 208, 226),rgb(150, 227, 150));
+    cursor: pointer;
+
 }
-.button{
-    width: auto;
-    border-radius: 6px;
-    margin-right: 10px;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.list-name{
+    text-align: center;
     margin-top: 10px;
-    color: black;
-    font-size: 15px;
-    border: 0 solid red;
+    font-size: 30px;
 }
-.b-c{
+.user-profile{
+    min-width: 240px;
+    max-width: 280px;
+    border-radius: 10px;
+    height: 70px;
     display: flex;
+    margin-right: 20px;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    border: 1px solid rgb(114, 103, 103);
+    margin-bottom: 15px;
+    background-image: linear-gradient(to right, rgb(127, 208, 226),rgb(150, 227, 150));
+    box-sizing: border-box;
 }
-.lb{
-    color: #ffffff;
-    background-color: #eab308;
+input{
+    margin-bottom: 20px;
+    width: 40%;
+    justify-self: center;
+    border-radius: 10px;
+    border: 0 solid white;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
 }
-.cb{
-    background-color: #ffffff;
+.icon{
+    justify-self: center;
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -5px;
+    margin-right: -8px;
 }
-.sb{
-    color: #ffffff;
-    background-color: #1d4ed8;
+.user-details{
+    width: 120px;
+}
+.avatar-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.av-name{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 5px;
+}
+.av-role{
+    font-size: 10px;
+    font-family: "Roboto";
+    margin: 0;
+    font-weight: 500;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.butoon-icon{
+    background: transparent;
+    border: 0;
+    margin: 0;
+
+}
+@media screen and (max-width:468px){
+    .list-container{
+        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 100%;
+        max-width: 350px;
+        padding-left: auto;
+        padding-right: auto;
+        background-image: linear-gradient(to right, rgb(127, 208, 226),rgb(150, 227, 150));
+        cursor: pointer;
+        box-sizing: content-box;
+        flex-shrink: 0;
+        margin: 0;
+    }
+    .list-name{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .user-profile{
+        min-width: 240px;
+        max-width: 280px;
+        border-radius: 10px;
+        height: 70px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgb(114, 103, 103);
+        margin-bottom: 15px;
+        background-image: linear-gradient(to right, rgb(127, 208, 226),rgb(150, 227, 150));
+        box-sizing: border-box;
+
+    
+    }
+    input{
+        margin-bottom: 20px;
+        width: 60%;
+        margin-left: 20%;
+        justify-self: center;
+        border-radius: 10px;
+        border: 0 solid white;
+        outline: none;
+    }
+    .icon{
+        justify-self: center;
+        align-self: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-left: -5px;
+        margin-right: -8px;
+    }
+    .user-details{
+        width: 130px;
+    }
+    .avatar-pic{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+    .av-name{
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        margin: 0;
+        margin-top: 5px;
+    }
+    .av-role{
+        font-size: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
+        margin: 0;
+    }
+    .butoon-icon{
+        background: transparent;
+        border: 0;
+    
+    }
+
+}
+@media screen and (min-width:468px)  and (max-width:992px){
+    .list-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
